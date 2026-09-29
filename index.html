@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Takecoffee</h1>
+    </div>
+
+    <div class="todos">
+    <div class="conteudo-principal">
+
+     
+        <div class="cadastro">
+            <h2>Cadastrar Item</h2>
+
+            <strong>Nome do Produto</strong>
+            <input id="nomedoproduto" type="text" placeholder="(ex: Cappuccino)">
+
+            <strong>Tipo</strong>
+            <input id="tipo" type="text" placeholder="(ex: Bebida Quente)">
+
+            <strong>Tamanho</strong>
+            <input id="tamanho" type="text" placeholder="(ex: 300 ml)">
+
+            <button onclick="cadastrarProduto()">Cadastrar</button>
+        </div>
+
+        <div class="coluna-direita">
+            
+            <div class="buscarERemover">
+                <strong>Buscar Item</strong>
+                <div class="linha-input">
+                    <input id="busca" type="text" placeholder="Digite o termo...">
+                    <button id="buscar" onclick="buscarItem()">Buscar</button>
+                </div>
+
+                <strong>Deletar por ID</strong>
+                <div class="linha-input">
+                    <input id="deleteId" type="text" placeholder="ID">
+                    <button class="vermelho" onclick="deletarPorId()">Deletar</button>
+                    <button class="vermelho" onclick="limpa()">Limpar Tudo</button>
+                </div>
+
+                <table class="tabela-resultados">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Tamanho</th>
+                        </tr>
+                    </thead>
+                    <tbody id="aparecerBusca"></tbody>
+                </table>
+            </div>
+
+            <div class="produtosCadastrados">
+                <h3>Produtos Cadastrados</h3>
+                <table class="tabela-produtos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Tamanho</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

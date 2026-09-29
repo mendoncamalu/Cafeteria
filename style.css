@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebdcd0;
+    color: #333;
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("captura.png") center/cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.conteudo-principal {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.cadastro, .buscarERemover, .produtosCadastrados {
+    background: #f7ede2;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cadastro {
+    width: 450px;
+}
+
+.coluna-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #4a2c11;
+    font-size: 26px;
+}
+
+strong {
+    display: block;
+    margin: 15px 0 6px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #d4c3b3;
+    border-radius: 8px;
+    background-color: #fffbf7;
+    font-size: 15px;
+}
+
+.linha-input {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+button {
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4a2c11;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.vermelho {
+    background: #c93b2b;
+}
+
+.cadastro button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffbf7;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: #4a2c11;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #e6d7c8;
+}
